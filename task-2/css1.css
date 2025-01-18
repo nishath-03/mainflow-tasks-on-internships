@@ -1,0 +1,177 @@
+
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Georgia', serif;
+      background-color: #fff5e6; /* Light background for a food theme */
+      line-height: 1.6;
+    }
+
+    /* Navigation Bar */
+    nav {
+      background-color: #ff7043; /* Warm orange for food appeal */
+      padding: 10px 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .nav-list {
+      list-style: none;
+      display: flex;
+      justify-content: center; /* Center the menu items */
+      align-items: center;
+    }
+
+    .nav-list li {
+      position: relative; /* Required for dropdown positioning */
+      margin: 0 15px;
+    }
+
+    .nav-list a {
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 20px;
+      display: inline-block;
+      border-radius: 8px;
+      font-size: 18px;
+      transition: background-color 0.3s, transform 0.2s;
+    }
+
+    .nav-list a:hover {
+      background-color: #ffa36c;
+      transform: scale(1.05); /* Slight zoom on hover */
+    }
+
+    /* Dropdown Menu */
+    .dropdown-content {
+      display: none; /* Hidden by default */
+      position: absolute;
+      top: 100%; /* Directly below parent link */
+      left: 0;
+      background-color: #fff; /* Dropdown background */
+      border: 1px solid #ff7043;
+      border-radius: 8px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+      min-width: 200px;
+      z-index: 1000;
+      text-decoration: none;
+    }
+
+    .dropdown-content a {
+      color: #333;
+      padding: 10px 15px;
+      display: block;
+      text-align: left;
+      transition: background-color 0.3s;
+      text-decoration: none;
+      
+    }
+
+    .dropdown-content a:hover {
+      background-color: #ffe5d1;
+    }
+
+    /* Show Dropdown on Hover */
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    /* Services Section */
+    .services {
+      padding: 50px 20px;
+      text-align: center;
+      background-color: #fff;
+    }
+
+    .services h2 {
+      font-size: 2.5rem;
+      color: #ff7043;
+      margin-bottom: 20px;
+    }
+
+    .services p {
+      font-size: 1.2rem;
+      color: #333;
+      margin-bottom: 40px;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+
+    .service-card {
+      background-color: #ffe5d1;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      padding: 20px;
+      text-align: center;
+    }
+
+    .service-card h3 {
+      color: #ff7043;
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+    }
+
+    .service-card p {
+      color: #555;
+    }
+
+    /* Form Section */
+    .form-section {
+      padding: 50px 20px;
+      background-color: #fff;
+      text-align: center;
+    }
+
+    .form-section h2 {
+      font-size: 2.5rem;
+      color: #ff7043;
+      margin-bottom: 20px;
+    }
+
+    form {
+      max-width: 600px;
+      margin: 0 auto;
+      background: #ffe5d1;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    form label {
+      display: block;
+      font-size: 1rem;
+      color: #555;
+      margin-bottom: 5px;
+    }
+
+    form input,
+    form textarea,
+    form select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    form button {
+      background-color: #ff7043;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    form button:hover {
+      background-color: #ffa36c;
+    }
